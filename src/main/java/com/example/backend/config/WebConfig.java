@@ -18,7 +18,7 @@ public class WebConfig implements WebMvcConfigurer { // Implementa a interface p
     @Override // Sobrescreve o método para adicionar mapeamentos CORS
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Mapeia todas as requisições que começam com /api
-                .allowedOrigins("http://localhost:5173", "https://frontend-framework-web2-trabalho-final.vercel.app/") // Permite o frontend local e o VERCEL 
+                .allowedOrigins("http://localhost:5173", "https://frontend-framework-web2-trabalho-final-k663u5kt7.vercel.app") // Permite o frontend local e o VERCEL 
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Permite os métodos HTTP especificados
                 .allowCredentials(true); // Permite enviar cookies e cabeçalhos de autenticação
     }
