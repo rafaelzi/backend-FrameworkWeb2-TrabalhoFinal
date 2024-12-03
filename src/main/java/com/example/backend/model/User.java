@@ -20,6 +20,9 @@ public class User {
  
     @Column(nullable = false, unique = true) // Define que o atributo "email" não pode ser nulo e deve ser único
     private String email; // Atributo que armazena o email do usuário
+
+    @Column(nullable = false, unique = true) // Define que o atributo "email" não pode ser nulo e deve ser único
+    private String phoneNumber; // Atributo que armazena o telefone do usuário
  
     // Getters e setters para os atributos da classe
     public Long getId() {
@@ -44,5 +47,13 @@ public class User {
  
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+ 
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

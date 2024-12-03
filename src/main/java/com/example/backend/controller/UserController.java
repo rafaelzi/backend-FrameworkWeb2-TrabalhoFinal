@@ -45,6 +45,7 @@ public class UserController {
             User user = optionalUser.get(); // Obtém o usuário do Optional
             user.setName(userDetails.getName()); // Atualiza o nome do usuário
             user.setEmail(userDetails.getEmail()); // Atualiza o email do usuário
+            user.setPhoneNumber(userDetails.getPhoneNumber()); // Atualiza o email do usuário
             return ResponseEntity.ok(userRepository.save(user)); // Salva o usuário atualizado e retorna 200 OK
         } else {
             return ResponseEntity.notFound().build(); // Retorna 404 Not Found se o usuário não existir
